@@ -863,8 +863,8 @@ layout abc_tooltip
 layout activity_bio_fibo
 layout activity_detalle
 layout activity_facto
+layout activity_fibo
 layout activity_main
-layout activity_main2
 layout activity_paises
 layout notification_action
 layout notification_action_tombstone

@@ -114,11 +114,13 @@ public class MainActivity extends AppCompatActivity {
               contFib++;
               fiboI.setText(getResources().getString(R.string.fiboI)+" "+contFib);
               fiboD.setText(getResources().getString(R.string.fecha)+" "+ LocalDateTime.now());
+              fibAct=2;
               break;
           case 3:
               contFac++;
               factI.setText(getResources().getString(R.string.factI)+" "+contFac);
               factD.setText(getResources().getString(R.string.fecha)+" "+ LocalDateTime.now());
+              fibAct=2;
               break;
           default:
               break;

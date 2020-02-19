@@ -25,7 +25,7 @@
         <activity android:name="com.T2.fibo.PaisesAct" />
         <activity android:name="com.T2.fibo.Facto" />
         <activity android:name="com.T2.fibo.bioFibo" />
-        <activity android:name="com.T2.fibo.Main2Activity" />
+        <activity android:name="com.T2.fibo.Fibo" />
         <activity android:name="com.T2.fibo.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
