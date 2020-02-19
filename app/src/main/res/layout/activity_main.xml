@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/imgdesc"
+        android:scaleType="centerInside"
+        android:src="@drawable/fibo"
+        app:layout_constraintBottom_toTopOf="@+id/fiboing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fiboing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/fibohint"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/fibo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiboing"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinnerF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Facto"
+        app:layout_constraintBottom_toTopOf="@+id/botonF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fibo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botonF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botonFact"
+        app:layout_constraintBottom_toTopOf="@+id/paises"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerF" />
+
+    <Button
+        android:id="@+id/paises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/botonF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fiboI"
+        android:text="@string/botonP" />
+
+    <TextView
+        android:id="@+id/fiboI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/fiboI"
+        app:layout_constraintBottom_toTopOf="@id/factI"
+        app:layout_constraintEnd_toStartOf="@+id/fiboD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paises" />
+
+    <TextView
+        android:id="@+id/fiboD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/fecha"
+        app:layout_constraintBottom_toTopOf="@id/factD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fiboI"
+        app:layout_constraintTop_toBottomOf="@+id/paises" />
+
+    <TextView
+        android:id="@+id/factI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/factI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/factD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiboI" />
+
+    <TextView
+        android:id="@+id/factD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/fecha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/factI"
+        app:layout_constraintTop_toBottomOf="@+id/fiboD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

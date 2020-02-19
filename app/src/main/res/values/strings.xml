@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Fibonacci</string>
+    <string name="Ini">0,1</string>
+    <string name="boton">¡Calcular!</string>
+    <string name="boton1">Volver</string>
+    <string name="botonFact">Factorial</string>
+    <string name="botonP">Lista de Paises</string>
+    <string name="imgdesc">¡El Fibo!</string>
+    <string name="fibohint">Ingrese la posicion deseada</string>
+    <string name="fecha">Ult.Usado:</string>
+    <string name="factI">Factorial: </string>
+    <string name="fiboI">Fibonacci: </string>
+    <string name="titP">Pais Seleccionado </string>
+    <string name="capital">Capital: </string>
+    <string name="nomp">Nombre: </string>
+    <string name="nompi">Nombre Internacional: </string>
+    <string name="sigla">Sigla: </string>
+
+
+    <string-array name="Facto">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>
